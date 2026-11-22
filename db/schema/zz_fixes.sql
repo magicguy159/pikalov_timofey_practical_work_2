@@ -93,3 +93,6 @@ with_prev AS (
 SELECT year_month,sum_no_commission,sum_with_commission,commission,prev_commission,
        commission-prev_commission commission_diff,courier_pay,commission-courier_pay net_profit
 FROM with_prev;
+
+-- BR-9.3 explicitly makes review text optional.
+ALTER TABLE review ALTER COLUMN description DROP NOT NULL;
