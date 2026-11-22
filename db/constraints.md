@@ -71,6 +71,7 @@
 - courier.dismissal_date — BR-6.3, работающий курьер не имеет даты увольнения.
 - "order".delivery_timestamp — BR-7.12, до завершения доставки пусто.
 - product.photo_url и review.photo_url — BR-5.6, BR-9.3, фото необязательно.
+- review.description — BR-9.3, текст отзыва необязателен.
 
 ## DEFAULT / GENERATED
 - UUID по умолчанию через exts.uuid_generate_v4() — BR-11.1.
