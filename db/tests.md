@@ -7,7 +7,9 @@
 createdb foodexpress
 psql -d foodexpress -f db/schema/foodexpress.sql
 psql -d foodexpress -f db/schema/zz_fixes.sql
+psql -d foodexpress -f db/schema/zzz_contract_fixes.sql
 psql -d foodexpress -f db/schema/grants.sql
+# Set the course-required inspector password interactively: psql -d foodexpress, then \\password inspector
 \`\`\`
 Перед этим администратор БД должен обеспечить существование схемы exts и расширения uuid-ossp в ней.
 
